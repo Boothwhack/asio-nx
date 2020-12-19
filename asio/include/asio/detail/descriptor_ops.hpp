@@ -26,6 +26,11 @@
 #include "asio/error_code.hpp"
 #include "asio/detail/socket_types.hpp"
 
+#if defined(SWITCH)
+# include "asio/detail/readv.hpp"
+# include "asio/detail/writev.hpp"
+#endif
+
 #include "asio/detail/push_options.hpp"
 
 namespace asio {

@@ -4480,6 +4480,7 @@
 /include/asio/detail/impl/handler_tracking.ipp
 /include/asio/detail/impl/kqueue_reactor.hpp
 /include/asio/detail/impl/kqueue_reactor.ipp
+/include/asio/detail/impl/malloc_buffer.ipp
 /include/asio/detail/impl/null_event.ipp
 /include/asio/detail/impl/pipe_select_interrupter.ipp
 /include/asio/detail/impl/posix_event.ipp
@@ -4489,6 +4490,7 @@
 /include/asio/detail/impl/reactive_descriptor_service.ipp
 /include/asio/detail/impl/reactive_serial_port_service.ipp
 /include/asio/detail/impl/reactive_socket_service_base.ipp
+/include/asio/detail/impl/readv.ipp
 /include/asio/detail/impl/resolver_service_base.ipp
 /include/asio/detail/impl/scheduler.ipp
 /include/asio/detail/impl/select_reactor.hpp
@@ -4520,6 +4522,7 @@
 /include/asio/detail/impl/win_static_mutex.ipp
 /include/asio/detail/impl/win_thread.ipp
 /include/asio/detail/impl/win_tss_ptr.ipp
+/include/asio/detail/impl/writev.ipp
 /include/asio/detail/io_control.hpp
 /include/asio/detail/io_object_impl.hpp
 /include/asio/detail/is_buffer_sequence.hpp
@@ -4575,6 +4578,7 @@
 /include/asio/detail/reactor.hpp
 /include/asio/detail/reactor_op.hpp
 /include/asio/detail/reactor_op_queue.hpp
+/include/asio/detail/readv.hpp
 /include/asio/detail/recycling_allocator.hpp
 /include/asio/detail/regex_fwd.hpp
 /include/asio/detail/resolve_endpoint_op.hpp
@@ -4673,6 +4677,7 @@
 /include/asio/detail/win_tss_ptr.hpp
 /include/asio/detail/work_dispatcher.hpp
 /include/asio/detail/wrapped_handler.hpp
+/include/asio/detail/writev.hpp
 /include/asio/dispatch.hpp
 /include/asio/error_code.hpp
 /include/asio/error.hpp

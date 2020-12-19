@@ -100,6 +100,7 @@
 /boost/asio/detail/impl/handler_tracking.ipp
 /boost/asio/detail/impl/kqueue_reactor.hpp
 /boost/asio/detail/impl/kqueue_reactor.ipp
+/boost/asio/detail/impl/malloc_buffer.ipp
 /boost/asio/detail/impl/null_event.ipp
 /boost/asio/detail/impl/pipe_select_interrupter.ipp
 /boost/asio/detail/impl/posix_event.ipp
@@ -109,6 +110,7 @@
 /boost/asio/detail/impl/reactive_descriptor_service.ipp
 /boost/asio/detail/impl/reactive_serial_port_service.ipp
 /boost/asio/detail/impl/reactive_socket_service_base.ipp
+/boost/asio/detail/impl/readv.ipp
 /boost/asio/detail/impl/resolver_service_base.ipp
 /boost/asio/detail/impl/scheduler.ipp
 /boost/asio/detail/impl/select_reactor.hpp
@@ -140,6 +142,7 @@
 /boost/asio/detail/impl/win_static_mutex.ipp
 /boost/asio/detail/impl/win_thread.ipp
 /boost/asio/detail/impl/win_tss_ptr.ipp
+/boost/asio/detail/impl/writev.ipp
 /boost/asio/detail/io_control.hpp
 /boost/asio/detail/io_object_impl.hpp
 /boost/asio/detail/is_buffer_sequence.hpp
@@ -195,6 +198,7 @@
 /boost/asio/detail/reactor.hpp
 /boost/asio/detail/reactor_op.hpp
 /boost/asio/detail/reactor_op_queue.hpp
+/boost/asio/detail/readv.hpp
 /boost/asio/detail/recycling_allocator.hpp
 /boost/asio/detail/regex_fwd.hpp
 /boost/asio/detail/resolve_endpoint_op.hpp
@@ -293,6 +297,7 @@
 /boost/asio/detail/win_tss_ptr.hpp
 /boost/asio/detail/work_dispatcher.hpp
 /boost/asio/detail/wrapped_handler.hpp
+/boost/asio/detail/writev.hpp
 /boost/asio/dispatch.hpp
 /boost/asio/error.hpp
 /boost/asio/execution/

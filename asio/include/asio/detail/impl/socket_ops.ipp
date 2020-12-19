@@ -43,6 +43,12 @@
 
 #include "asio/detail/push_options.hpp"
 
+#if defined(SWITCH)
+void			 if_freenameindex(struct if_nameindex *);
+char			*if_indextoname(unsigned int, char *);
+unsigned int		 if_nametoindex(const char *);
+#endif
+
 namespace asio {
 namespace detail {
 namespace socket_ops {
@@ -1822,7 +1828,7 @@ socket_type socket(int af, int type, int protocol,
   }
 
   return s;
-#elif defined(__MACH__) && defined(__APPLE__) || defined(__FreeBSD__)
+#elif defined(__MACH__) && defined(__APPLE__) || defined(__FreeBSD__) || defined(SWITCH)
   socket_type s = ::socket(af, type, protocol);
   get_last_error(ec, s < 0);
 

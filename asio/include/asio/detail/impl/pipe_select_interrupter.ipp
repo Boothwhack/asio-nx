@@ -22,6 +22,7 @@
 #if !defined(__CYGWIN__)
 #if !defined(__SYMBIAN32__)
 #if !defined(ASIO_HAS_EVENTFD)
+#if !defined(SWITCH)
 
 #include <fcntl.h>
 #include <sys/stat.h>
@@ -120,6 +121,7 @@ bool pipe_select_interrupter::reset()
 
 #include "asio/detail/pop_options.hpp"
 
+#endif // !defined(SWITCH)
 #endif // !defined(ASIO_HAS_EVENTFD)
 #endif // !defined(__SYMBIAN32__)
 #endif // !defined(__CYGWIN__)

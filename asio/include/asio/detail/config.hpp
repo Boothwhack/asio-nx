@@ -11,6 +11,10 @@
 #ifndef ASIO_DETAIL_CONFIG_HPP
 #define ASIO_DETAIL_CONFIG_HPP
 
+#if defined(SWITCH)
+# define ASIO_DISABLE_SERIAL_PORT
+#endif
+
 // boostify: non-boost code starts here
 #if !defined(ASIO_STANDALONE)
 # if !defined(ASIO_ENABLE_BOOST)

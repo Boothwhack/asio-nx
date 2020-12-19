@@ -97,6 +97,7 @@ nobase_include_HEADERS = \
 	asio/detail/impl/handler_tracking.ipp \
 	asio/detail/impl/kqueue_reactor.hpp \
 	asio/detail/impl/kqueue_reactor.ipp \
+    asio/detail/impl/malloc_buffer.ipp \
 	asio/detail/impl/null_event.ipp \
 	asio/detail/impl/pipe_select_interrupter.ipp \
 	asio/detail/impl/posix_event.ipp \
@@ -106,6 +107,7 @@ nobase_include_HEADERS = \
 	asio/detail/impl/reactive_descriptor_service.ipp \
 	asio/detail/impl/reactive_serial_port_service.ipp \
 	asio/detail/impl/reactive_socket_service_base.ipp \
+	asio/detail/impl/readv.ipp \
 	asio/detail/impl/resolver_service_base.ipp \
 	asio/detail/impl/scheduler.ipp \
 	asio/detail/impl/select_reactor.hpp \
@@ -137,6 +139,7 @@ nobase_include_HEADERS = \
 	asio/detail/impl/win_static_mutex.ipp \
 	asio/detail/impl/win_thread.ipp \
 	asio/detail/impl/win_tss_ptr.ipp \
+	asio/detail/impl/writev.ipp \
 	asio/detail/io_control.hpp \
 	asio/detail/io_object_impl.hpp \
 	asio/detail/is_buffer_sequence.hpp \
@@ -192,6 +195,7 @@ nobase_include_HEADERS = \
 	asio/detail/reactor.hpp \
 	asio/detail/reactor_op.hpp \
 	asio/detail/reactor_op_queue.hpp \
+	asio/detail/readv.hpp \
 	asio/detail/recycling_allocator.hpp \
 	asio/detail/regex_fwd.hpp \
 	asio/detail/resolve_endpoint_op.hpp \
@@ -290,6 +294,7 @@ nobase_include_HEADERS = \
 	asio/detail/win_tss_ptr.hpp \
 	asio/detail/work_dispatcher.hpp \
 	asio/detail/wrapped_handler.hpp \
+	asio/detail/writev.hpp \
 	asio/dispatch.hpp \
 	asio/error_code.hpp \
 	asio/error.hpp \

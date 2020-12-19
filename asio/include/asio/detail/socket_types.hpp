@@ -75,8 +75,10 @@
 #  include <sys/select.h>
 # endif
 # include <sys/socket.h>
-# include <sys/uio.h>
-# include <sys/un.h>
+# if !defined(SWITCH)
+#  include <sys/uio.h>
+#  include <sys/un.h>
+# endif
 # include <netinet/in.h>
 # if !defined(__SYMBIAN32__)
 #  include <netinet/tcp.h>
@@ -307,12 +309,19 @@ struct in4_mreq_type
 # else
 typedef ip_mreq in4_mreq_type;
 # endif
+# if defined(SWITCH)
+struct ipv6_mreq {
+    in6_addr ipv6mr_multiaddr;
+    int ipv6mr_interface;
+};
+# endif
 typedef sockaddr_in sockaddr_in4_type;
 typedef in6_addr in6_addr_type;
 typedef ipv6_mreq in6_mreq_type;
 typedef sockaddr_in6 sockaddr_in6_type;
 typedef sockaddr_storage sockaddr_storage_type;
-typedef sockaddr_un sockaddr_un_type;
+// typedef sockaddr_un sockaddr_un_type;
+struct sockaddr_un_type { u_short sun_family; char sun_path[108]; };
 typedef addrinfo addrinfo_type;
 typedef ::linger linger_type;
 typedef int ioctl_arg_type;
